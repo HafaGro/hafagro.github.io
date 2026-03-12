@@ -1,0 +1,129 @@
+.features {
+  padding: 5rem 2rem 8rem 2rem;
+  overflow: visible;
+  position: relative;
+}
+
+.features-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.features-left {
+  flex: 1;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.app-icon {
+  width: 160px;
+  height: 160px;
+  border-radius: 40px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.features-title {
+  font-family: var(--font-inter);
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: var(--color-text-dark);
+  margin-bottom: 1rem;
+}
+
+.features-title span {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.features-desc {
+  font-family: var(--font-inter);
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem 2.5rem;
+  border-radius: 20px;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--color-text-accent);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.feature-check {
+  color: var(--color-accent);
+  width: 28px;
+  height: 28px;
+}
+
+.features-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.promo-img {
+  width: 130%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.rocket-img {
+  position: absolute;
+  bottom: -45%;
+  left: -125%;
+  width: 500px;
+  height: auto;
+  z-index: 3;
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .features-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 4rem;
+  }
+  .features-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-item {
+    text-align: left;
+    width: 100%;
+  }
+  .rocket-img {
+    width: 300px;
+    bottom: -10%;
+    left: 0;
+  }
+}

@@ -1,0 +1,5 @@
+# Authorized Digital Sellers for Mobile Apps
+# See https://iabtechlab.com/ads-txt/ for more information
+# Placeholder content - Replace with your actual ad network information
+# Format: <Domain>, <Publisher ID>, <Type>, <Certification ID>
+# Example: google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

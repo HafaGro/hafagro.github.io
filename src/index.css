@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@400;600&family=Poppins:wght@400;600;700&family=Quicksand:wght@500;600;700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+  /* Colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #eff8fe;
+  --color-bg-tertiary: #def6e7;
+  --color-text-dark: #1c0e0d;
+  --color-text-main: #202020;
+  --color-text-muted: #383838;
+  --color-text-light: #585858;
+  --color-text-purple: #332c5c;
+  --color-text-purple-light: #5e587a;
+  --color-accent: #8976fd;
+  --color-text-accent: #071a27;
+
+  /* Fonts */
+  --font-inter: 'Inter', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-quicksand: 'Quicksand', sans-serif;
+  --font-nunito: 'Nunito Sans', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+
+  /* Easing functions */
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-main);
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Animations added via Framer Motion, but basic utilities here */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Reusable styles */
+.gradient-bg-1 {
+  background: radial-gradient(circle at 100% 0%, rgba(137, 118, 253, 0.2) 0%, transparent 40%),
+              radial-gradient(circle at 0% 100%, rgba(7, 26, 39, 0.1) 0%, transparent 40%);
+}
+
+.gradient-bg-2 {
+  background: var(--color-bg-secondary);
+}
+
+.gradient-bg-3 {
+  background: var(--color-bg-tertiary);
+}

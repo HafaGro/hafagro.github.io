@@ -1,0 +1,5 @@
+.app-container {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}

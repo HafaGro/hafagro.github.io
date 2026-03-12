@@ -1,15 +1,12 @@
 .footer {
   position: relative;
   background-color: #f6fbfa;
-  /* very light, soft green-tinted white */
   padding: 8rem 0 3rem;
   overflow: hidden;
   color: var(--color-text-dark);
   margin-top: -50px;
-  /* pull up to overlap with previous section slightly */
 }
 
-/* Subtle glowing orbs for harmony */
 .footer::before,
 .footer::after {
   content: '';
@@ -25,7 +22,6 @@
   width: 500px;
   height: 500px;
   background: rgba(183, 237, 218, 0.4);
-  /* light green matching hero */
 }
 
 .footer::after {
@@ -34,7 +30,6 @@
   width: 400px;
   height: 400px;
   background: rgba(147, 197, 253, 0.2);
-  /* very light blue accent */
 }
 
 .footer-arc {
@@ -45,7 +40,6 @@
   width: 150vw;
   height: 150px;
   background-color: var(--color-bg-tertiary);
-  /* matches third section bottom */
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   z-index: 1;
@@ -60,7 +54,6 @@
   width: 100%;
 }
 
-/* Top Section (Logo, Tagline, Socials) */
 .footer-top-section {
   display: flex;
   flex-direction: column;
@@ -95,7 +88,6 @@
   font-weight: 500;
 }
 
-/* Social Icons */
 .social-icons {
   display: flex;
   gap: 1.25rem;
@@ -122,7 +114,6 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Bottom Bar */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -154,8 +145,48 @@
   font-weight: 500;
 }
 
-/* Responsive */
+/* ===== TABLET (max-width: 1024px) ===== */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 6rem 0 2rem;
+  }
+
+  .footer-arc {
+    height: 100px;
+  }
+}
+
+/* ===== MOBILE (max-width: 768px) ===== */
 @media (max-width: 768px) {
+  .footer {
+    padding: 5rem 0 2rem;
+    margin-top: -30px;
+  }
+
+  .footer-arc {
+    height: 80px;
+  }
+
+  .footer-top-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-logo-wrap {
+    padding: 1rem;
+    border-radius: 24px;
+  }
+
+  .footer-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer-tagline {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
   .footer-bottom {
     flex-direction: column;
     gap: 1.5rem;
@@ -165,5 +196,30 @@
   .footer-bottom-links {
     flex-direction: column;
     gap: 1rem;
+  }
+}
+
+/* ===== SMALL MOBILE (max-width: 480px) ===== */
+@media (max-width: 480px) {
+  .footer {
+    padding: 4rem 0 1.5rem;
+    margin-top: -20px;
+  }
+
+  .footer-arc {
+    height: 60px;
+  }
+
+  .footer-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-tagline {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
   }
 }

@@ -61,3 +61,17 @@ body {
 .gradient-bg-3 {
   background: var(--color-bg-tertiary);
 }
+
+/* ===== Global Responsive ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+}
+

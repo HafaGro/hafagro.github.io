@@ -59,8 +59,6 @@
   line-height: 1.5;
 }
 
-/* Man and Balloons are now one element .balloons-wrapper */
-
 .balloons-wrapper {
   position: absolute;
   right: 30%;
@@ -77,20 +75,92 @@
   object-fit: contain;
 }
 
+/* ===== TABLET (max-width: 1024px) ===== */
 @media (max-width: 1024px) {
+  .compatibility {
+    padding: 6rem 2rem 30rem 2rem;
+  }
+
   .grid-features {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  .man-image-wrapper {
-    margin-top: 0;
-    align-self: center;
+  .balloons-wrapper {
+    width: 400px;
+    right: -10%;
+    top: auto;
+    bottom: 5%;
+  }
+}
+
+/* ===== MOBILE (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  .compatibility {
+    padding: 4rem 1rem 20rem 1rem;
+  }
+
+  .grid-features {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid-feature-card {
+    padding: 1.5rem;
+    gap: 1.2rem;
+    border-radius: 20px;
+  }
+
+  .grid-feature-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+  }
+
+  .grid-feature-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .grid-feature-text p {
+    font-size: 0.95rem;
   }
 
   .balloons-wrapper {
-    width: 400px;
-    right: -20%;
-    top: 5%;
+    width: 280px;
+    right: -5%;
+    bottom: 3%;
+  }
+}
+
+/* ===== SMALL MOBILE (max-width: 480px) ===== */
+@media (max-width: 480px) {
+  .compatibility {
+    padding: 3rem 0.75rem 15rem 0.75rem;
+  }
+
+  .grid-feature-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+
+  .grid-feature-icon img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .grid-feature-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .grid-feature-text p {
+    font-size: 0.85rem;
+  }
+
+  .balloons-wrapper {
+    width: 200px;
+    right: 0;
+    bottom: 2%;
   }
 }

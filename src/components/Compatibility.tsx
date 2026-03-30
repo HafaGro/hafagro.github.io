@@ -5,7 +5,6 @@ import './Compatibility.css';
 
 export const Compatibility = () => {
   const compatibilityPoints = [
-[
   {
     title: "Android Optimized Solutions",
     desc: "Enjoy our applications designed specifically for Android devices with seamless system integration",

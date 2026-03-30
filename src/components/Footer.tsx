@@ -26,7 +26,7 @@ export const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-links">
             {/* <a href="#" className="privacy-link">Privacy Policy</a> */}
-            <span className="email-text">hafagroup@proton.me</span>
+            <span className="email-text">hafagroupapps@gmail.com</span>
           </div>
           <span className="copyright-text">© Copyright 2026</span>
         </div>

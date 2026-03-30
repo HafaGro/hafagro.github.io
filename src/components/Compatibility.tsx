@@ -5,27 +5,28 @@ import './Compatibility.css';
 
 export const Compatibility = () => {
   const compatibilityPoints = [
-    {
-      title: "Cross-Platform Compatibility",
-      desc: "Enjoy our games seamlessly on both iOS and Android devices (coming soon)",
-      img: IMAGES.frame1,
-    },
-    {
-      title: "User-Centric Development",
-      desc: "Our apps are built with the player in mind, ensuring intuitive interfaces and enjoyable gameplay",
-      img: IMAGES.frame2,
-    },
-    {
-      title: "Global Reach",
-      desc: "Our games are designed for players around the world, with localization and customization for different markets",
-      img: IMAGES.frame3,
-    },
-    {
-      title: "Scalable Technology",
-      desc: "Our games are built on robust platforms, allowing for future updates and expansions",
-      img: IMAGES.frame4,
-    }
-  ];
+[
+  {
+    title: "Android Optimized Solutions",
+    desc: "Enjoy our applications designed specifically for Android devices with seamless system integration",
+    img: IMAGES.frame1,
+  },
+  {
+    title: "User-Centric Development",
+    desc: "Our tools are built with the user in mind, ensuring intuitive interfaces and a smooth, reliable experience",
+    img: IMAGES.frame2,
+  },
+  {
+    title: "Global Reach",
+    desc: "Our apps are designed for users around the world, with localization and customization for different markets",
+    img: IMAGES.frame3,
+  },
+  {
+    title: "Scalable Technology",
+    desc: "Our applications are built on robust platforms, ensuring stability and allowing for future feature expansions",
+    img: IMAGES.frame4,
+  }
+];
 
   return (
     <section className="compatibility gradient-bg-3">

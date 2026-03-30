@@ -19,7 +19,7 @@ export const Footer = () => {
             <img src={IMAGES.image418} alt="Logo" className="footer-logo" />
           </div>
           <p className="footer-tagline">
-            Companion for a healthy lifestyle
+            Companion for a lifestyle
           </p>
         </motion.div>
         

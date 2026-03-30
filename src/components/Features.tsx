@@ -45,7 +45,7 @@ export const Features = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="features-desc"
           >
-            Pedometer is a faithful assistant for maintaining life in good shape and motivating you to lead a healthy lifestyle. Set daily goals, monitor your progress, and improve your fitness with every step
+            Pedometer is a faithful assistant for maintaining your form in good shape and motivating you to lead a healthy lifestyle. Set daily goals, monitor your progress, and improve your fitness with every step
           </motion.p>
           
           <div className="features-list">

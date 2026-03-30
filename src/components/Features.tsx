@@ -35,7 +35,7 @@ export const Features = () => {
             className="features-title"
           >
             Step Counter<br />
-            <span>Companion for a healthy lifestyle</span>
+            <span>Companion for an active lifestyle</span>
           </motion.h2>
           
           <motion.p 
@@ -45,7 +45,7 @@ export const Features = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="features-desc"
           >
-            Pedometer is a faithful assistant for maintaining your form in good shape and motivating you to lead a healthy lifestyle. Set daily goals, monitor your progress, and improve your fitness with every step
+            Pedometer is a reliable tool to track your daily movement and motivate you to stay active. Set daily goals, monitor your progress, and see your activity stats with every step
           </motion.p>
           
           <div className="features-list">
